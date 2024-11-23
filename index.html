@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Tracking Portal</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header>
+        <p align="left"><img src="logo.png" width="90px" height="auto"></p>
+        <img src="/logo2.jpeg" height="99px" width="auto">
+        <h1>Panthera Innovates</h1>
+        <h4>~Unleashing agility in technology</h4>
+    </header>
+
+    <div class="container">
+        <!-- Login Section -->
+        <div class="login">
+            <h2>Login to Profile</h2>
+           <!-- <form id="employee-form">
+                <label for="name">User Name:</label>
+                <input type="text" id="uname" placeholder="Enter user name" required>
+
+                <label for="password">Enter Password:</label>
+                <input type="password" id="passwd" required>
+
+                <button type="submit">Login</button>
+            </form> -->
+            <div id="login-error-msg-holder">
+                <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+		<form action="/auth" method="post">
+				<label for="username">
+					<!-- font awesome icon -->
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="username" placeholder="Username" id="username" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="password" placeholder="Password" id="password" required>
+				<input type="submit" value="Login">
+			</form>              </div>
+              
+        </div>
+
+    <footer>
+        <p>&copy; 2024 Employee Tracking Portal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

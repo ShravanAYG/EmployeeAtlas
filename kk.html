@@ -1,0 +1,96 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="kl.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Employee Profile Section -->
+        <section id="profile-section">
+            <h2>Employee Profile</h2>
+            <div class="profile-container">
+                <div class="profile-image">
+                    <img id="profile-pic" src="/api/placeholder/150/150" alt="Profile Picture">
+                    <input type="file" id="profile-upload" accept="image/*">
+                </div>
+                <div class="profile-details">
+                    <div class="input-group">
+                        <label for="emp-name">Name:</label>
+                        <input type="text" id="emp-name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="aadhar">Aadhar Number:</label>
+                        <input type="text" id="aadhar" maxlength="12" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="join-date">Joining Date:</label>
+                        <input type="date" id="join-date" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="qualification">Qualification:</label>
+                        <input type="text" id="qualification" required>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tracking Portal Section -->
+        <section id="tracking-section">
+            <h2>Attendance Tracking</h2>
+            <div class="tracking-container">
+                <div class="time-tracking">
+                    <button id="clock-in">Clock In</button>
+                    <button id="clock-out">Clock Out</button>
+                    <div class="time-display">
+                        <span>Entry Time: <span id="entry-time">--:--</span></span>
+                        <span>Exit Time: <span id="exit-time">--:--</span></span>
+                        <span>Working Hours: <span id="working-hours">0</span></span>
+                    </div>
+                </div>
+                <div class="attendance-stats">
+                    <div class="progress-circle">
+                        <div id="attendance-percentage">0%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Salary Details Section -->
+        <section id="salary-section">
+            <h2>Salary Details</h2>
+            <div class="salary-container">
+                <div class="salary-info">
+                    <div class="input-group">
+                        <label for="fixed-salary">Fixed Salary:</label>
+                        <input type="number" id="fixed-salary" required>
+                    </div>
+                    <div class="salary-adjustments">
+                        <div class="increment">
+                            <span>Overtime Increment:</span>
+                            <span id="increment-percentage">0%</span>
+                        </div>
+                        <div class="decrement">
+                            <span>Attendance Penalty:</span>
+                            <span id="decrement-percentage">0%</span>
+                        </div>
+                    </div>
+                    <div class="final-salary">
+                        <span>Final Salary:</span>
+                        <span id="final-salary-amount">₹0</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="ki.js"></script>
+	<a href="/kk2.html"><button href="/kk2.html">Submit</button></a>
+</body>
+</html>

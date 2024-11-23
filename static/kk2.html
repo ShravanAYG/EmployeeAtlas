@@ -1,0 +1,148 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="kl.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Employee Profile Section -->
+        <section id="profile-section">
+            <h2>Employee Profile</h2>
+            <div class="profile-container">
+                <div class="profile-image">
+                    <img id="profile-pic" src="/dp.jpeg" alt="Profile Picture">
+                    <input type="file" id="profile-upload" accept="image/*">
+                </div>
+                <div class="profile-details">
+                    <div class="input-group">
+                        <label for="emp-name">Name:</label>
+                        Jatin 
+                    </div>
+                    <div class="input-group">
+                        <label for="aadhar">Aadhar Number:</label>
+                        8254 2343 2346
+                    </div>
+                    <div class="input-group">
+                        <label for="dob">Date of Birth:</label>
+                        23 November 2000
+                    </div>
+                    <div class="input-group">
+                        <label for="join-date">Joining Date:</label>
+                        26 January 2022
+                    </div>
+                    <div class="input-group">
+                        <label for="qualification">Qualification:</label>
+                        Phd
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tracking Portal Section -->
+        <section id="tracking-section">
+            <h2>Attendance Tracking</h2>
+            <div class="tracking-container">
+                <div class="time-tracking">
+                    <button id="clock-in">Clock In</button>
+                    <button id="clock-out">Clock Out</button>
+                    <div class="time-display">
+                        <span>Entry Time: <span id="entry-time">09:00</span></span>
+                        <span>Exit Time: <span id="exit-time">17:30</span></span>
+                        <span>Working Hours: <span id="working-hours">8</span></span>
+                    </div>
+                </div>
+                <div class="attendance-stats">
+                    <div class="progress-circle">
+                        <div id="attendance-percentage">92%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Salary Details Section -->
+        <section id="salary-section">
+            <h2>Salary Details</h2>
+            <div class="salary-container">
+                <div class="salary-info">
+                    <div class="input-group">
+                        <label for="fixed-salary">Fixed Salary:</label>
+                        <input type="number" id="fixed-salary" required>
+                    </div>
+                    <div class="salary-adjustments">
+                        <div class="increment">
+                            <span>Overtime Increment:</span>
+                            <span id="increment-percentage">5%</span>
+                        </div>
+                        <div class="decrement">
+                            <span>Attendance Penalty:</span>
+                            <span id="decrement-percentage">2%</span>
+                        </div>
+                    </div>
+                    <div class="final-salary">
+                        <span>Final Salary:</span>
+                        <span id="final-salary-amount">₹4500000</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Employee Rankings Section -->
+        <section id="rankings-section">
+            <h2>Employee of the Year Dashboard</h2>
+            <div class="rankings-container">
+                <table id="rankings-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Name</th>
+                            <th>Performance Score</th>
+                            <th>Attendance</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rankings-body">
+                        <!-- Rankings will be populated by JavaScript -->
+                        <tr>
+                        <td>1</td>
+                         <td>Shravan</td>
+                         <td>800</td>
+                         <td>95</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                             <td>Jatin</td>
+                             <td>750</td>
+                             <td>92</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                 <td>Malatesh</td>
+                                 <td>700</td>
+                                 <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                     <td>Shreekar</td>
+                                     <td>680</td>
+                                     <td>88</td>
+                                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="Bar chart">
+            <h2>Salary Details</h2>
+            <div class="bar-chart">
+                <div class="sbar-chart">
+                    <img src="/graph.jpeg"></img>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
